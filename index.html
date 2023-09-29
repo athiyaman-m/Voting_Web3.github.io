@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting Dapp</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <nav>
-        <h1 class="h1">Voting D-app</h1>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Candidates ID</th>
-          <th>Candidates</th>
-          <th>Votes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td id="1"></td>
-          <td id="candidate1"></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td id="2"></td>
-          <td id="candidate2"></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td id="3"></td>
-          <td id="candidate3"></td>
-        </tr>
-      </tbody>
-    </table>
-    <input type="text" id="candidate" placeholder="Candidates ID" />
-    <button onclick="vote()" class="btn">Vote</button>
-    <script src="./node_modules/web3/dist/web3.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DIGITAL INDIA ELECTION PORTAL</h1>
+    <nav>
+      <a href="" style="color: aliceblue; margin-right:25px; ">Home</a>
+
+      <a href="" style="color: aliceblue;margin-right:25px">Election Details</a>
+      <a href=""style="color: aliceblue;">About us</a>
+    </nav>
+  </header>
+  <br>
+<h2 style="text-align: center;">VOTE FOR RIGHT INDIA! </h2>
+    <section class="content">
+      <h3><u>Important Instructions to Vote</u>,
+      
+        <p>Step 1 : Login into your metamask account.</p>
+      
+        
+        
+        <p>Step 2 : Enter the respective candidate ID in box. </p>
+     
+        <p>Step 3 : Click the "Vote" button to register your vote.</p>
+      </h3>
+      <br>
+      <br>
+      <marquee>Live : Indian Prime Minister Election</marquee>
+      <br>
+      <br>
+        <div class="left-content">
+            <!-- Place your picture here -->
+            
+            <img src="images/body01.webp" alt="Candidate Image">
+        </div>
+       
+        <div class="right-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Candidate ID</th>
+                        <th>Candidate</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td id="1">BJP - Bharatiya Janta Party</td>
+                        <td id="candidate1">0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="2">INC - The Indian National Congress</td>
+                        <td id="candidate2">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="3">BSP - Bahujan Samaj Party</td>
+                        <td id="candidate3">0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="text" id="candidate" placeholder="Candidate ID" />
+            <button onclick="vote()" class="btn">Vote</button>
+            <br>
+            <br>
+            <h5>ELECTION TYPE : Prime Minister Election 2023 </h5>
+            <br>
+            <h5>BEGIN VOTE : 01/10/2023 - 9am</h5>
+            <br>
+            <h5>END VOTE : 02/10/2023 - 9am</h5>
+            <br>
+            <h5>RESULT : 02/10/2023 - 9am</h5>
+            <br>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">
+        <p>In Association with :&nbsp&nbsp</p>
+          <img src="images/unnamed.jpg" alt="Left Logo" style="margin: 10px;">
+          &nbsp&nbsp&nbsp
+          <img src="images/aicte.jpg.crdownload" alt="Right Logo" style="margin: 10px;">
+          &nbsp&nbsp&nbsp
+       
+          <img src="images/A2p_rP6_400x400.jpg" alt="Right Logo" style="margin: 10px;">
+          &nbsp&nbsp&nbsp
+
+          <img src="images/logo.jpg" alt="Right Logo" style="margin: 10px;">
+      </div>
+      <div class="center-content">
+          <p>&copy; 2023 SMART INDIA HACKATHON &nbsp&nbsp ||&nbsp&nbspAll rights reserved.</p>
+          
+          <p>Contact: +1234567890 &nbsp&nbsp||&nbsp&nbspEmail: info@SIH2023.com</p>
+          
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
